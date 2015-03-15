@@ -1,0 +1,218 @@
+/**********************************************
+
+COLOR PALETTE
+
+Dark Blue - #15192d;
+Light Blue - #d1e4fc;
+Royal Blue - #322c6f;
+Red - #b91806;
+
+
+
+CSS RESET ************************************/
+
+html,span,p,applet,object,iframe,h1,h2,h3,h4,h5,h6, blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:16px;
+    font:inherit;
+    vertical-align:bottom
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block
+}
+
+
+
+/***********************************************/
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('font/BebasNeue-webfont.eot');
+    src: url('font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/BebasNeue-webfont.woff2') format('woff2'),
+         url('font/BebasNeue-webfont.woff') format('woff'),
+         url('font/BebasNeue-webfont.ttf') format('truetype'),
+         url('font/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+html {
+    box-sizing: border-box;
+    background: url(images/grid.png);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.outline {
+    display:none
+}
+
+body {
+    
+    font: normal 16px/1.5em "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: #15192d;
+    margin:0;
+    padding:0;
+}
+
+.mobile {
+    display:none
+}
+
+h2 {
+	font: normal 48px/1.5em "bebas_neueregular", "Century Gothic", sans-serif;
+}
+
+
+.horizontal-padding {
+	padding-left: 8%;
+	padding-right: 8%; 	/* 96px ÷ 1200px */
+
+}
+
+.top-padding {
+	padding-top: 6%; /* 72px ÷ 1200 */
+}
+
+.bottom-padding {
+	padding-bottom: 6%; /* 72px ÷ 1200 */
+}
+
+header, .benefits, .about-me, .newsletter {
+	overflow:auto;
+}
+
+header {
+    background-color: #fff; 
+    padding-bottom: 3em; /* 48px ÷ 16 */
+}
+
+.logo {
+	float: left;
+}
+
+.social {
+	float: right;
+	width: 28%; /* 336px ÷ 1200 */
+}
+
+.social a {
+	margin-left: 20%; /* 48px ÷ 240 */
+	margin-top: 3em; /* 48px ÷ 16 */
+	float:right;
+	text-align:center;
+	text-decoration: none;
+	color: #322c6f;
+	font: normal 24px/1em "bebas_neueregular", "Century Gothic", sans-serif;
+}
+
+
+.circle {
+	display: block;
+	background-color: #d1e4fc;
+	border-radius: 50%;
+	height: 3em; /* 72px ÷ 24 */
+	width: 3em; /* 72px ÷ 24 */
+}
+
+.blog {
+	background: #d1e4fc url("images/blog-t.png") no-repeat center center;
+}
+
+
+.podcast {
+	background: #d1e4fc url("images/podcast-t.png") no-repeat center center;
+
+}
+
+.newsletter {
+	padding-top: 3em; /* 48px ÷ 16 */
+	padding-bottom: 3em; /* 48px ÷ 16 */
+	background-color: #322c6f;
+	color: #fff;
+}
+
+.newsletter .description {
+	float: left;
+	width: 58%; /* 696 ÷ 1200 */
+}
+
+.newsletter .description p {
+	width: 92%; /* 552 ÷ 600 */
+}
+
+.subscription a {
+	color: #fff;
+}
+
+.subscription {
+	display: inline-block;
+	width: 22.5em; /* 360px ÷ 16 */
+	text-align: center;
+	float: right;
+	padding-top: 6em; /* 96px ÷ 16 */
+}
+
+a.subscribe-button  {
+	display: block;
+	font: 48px "bebas_neueregular", "Century Gothic", sans-serif;
+	line-height: 2em;
+	width: 7.5em; /* 360px ÷ 48 */
+	height: 2em; /* 96 ÷ 48 */
+	background-color: #b91806;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
+.benefits {
+	padding-top: 3em; /* 48px ÷ 16 */
+	width: 100%;
+	padding-bottom: 3em; /* 48px ÷ 16 */
+	background-color: #d1e4fc;
+}
+
+.icons {
+	text-align: justify;
+
+}
+
+.icons:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.benefits .icon {
+	width: 193px; 
+	display: inline-block;
+	text-align: center;
+}
+
+
+.about-me {
+	padding-top: 3em; /* 48px ÷ 16 */
+	background: #fff;
+}
+
+.about-me img {
+	float: right;
+	margin-top: -3.43em; /* -55px ÷ 16 */
+}
+
+.about-me p {
+	margin-right: 34%; /* 408 ÷ 1200 */
+}
+

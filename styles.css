@@ -1,4 +1,4 @@
-/**********************************************
+/* #################### COLOR PALETTE ###################### 
 
 COLOR PALETTE
 
@@ -9,9 +9,8 @@ Red - #b91806;
 
 
 
-CSS RESET ************************************/
-
-html,span,p,applet,object,iframe,h1,h2,h3,h4,h5,h6, blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+######################## RESET ########################## */
+html,span,p,applet,object,iframe,h1,h2,h3,h4,h5,h6,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin:0;
     padding:0;
     border:0;
@@ -25,194 +24,395 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display:block
 }
 
-
-
-/***********************************************/
-
-@font-face {
-    font-family: 'bebas_neueregular';
-    src: url('font/BebasNeue-webfont.eot');
-    src: url('font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/BebasNeue-webfont.woff2') format('woff2'),
-         url('font/BebasNeue-webfont.woff') format('woff'),
-         url('font/BebasNeue-webfont.ttf') format('truetype'),
-         url('font/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 html {
-    box-sizing: border-box;
-    background: url(images/grid.png);
+    box-sizing:border-box
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,:before,:after {
+    box-sizing:inherit
 }
 
-.outline {
+/* ################ GENERAL STYLES ###################### */
+.outline,.hide,.logo-small {
     display:none
 }
 
 body {
-    
-    font: normal 16px/1.5em "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    color: #15192d;
+    font:normal 16px/1.5em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    color:#15192d;
     margin:0;
     padding:0;
+    min-width:300px
 }
 
-.mobile {
-    display:none
+@font-face {
+    font-family:'bebas_neueregular';
+    src:url(font/BebasNeue-webfont.eot);
+    src:url(font/BebasNeue-webfont.eot?#iefix) format("embedded-opentype"),url(font/BebasNeue-webfont.woff2) format("woff2"),url(font/BebasNeue-webfont.woff) format("woff"),url(font/BebasNeue-webfont.ttf) format("truetype"),url(font/BebasNeue-webfont.svg#bebas_neueregular) format("svg");
+    font-weight:400;
+    font-style:normal
+}
+
+.inside-top-padding {
+    padding-top:4%
+/* 48px ÷ 1200 */
+}
+
+.inside-b-padding {
+    padding-bottom:4%
+/* 48px ÷ 1200 */
+}
+
+.x-padding {
+    padding-left:4%;
+    padding-right:4%
+/* 24px ÷ 1200 */
 }
 
 h2 {
-	font: normal 48px/1.5em "bebas_neueregular", "Century Gothic", sans-serif;
+    font:normal 48px/1em bebas_neueregular,"Century Gothic",sans-serif;
+    margin:.5em 0
 }
 
-
-.horizontal-padding {
-	padding-left: 8%;
-	padding-right: 8%; 	/* 96px ÷ 1200px */
-
+p {
+    margin-top:1em;
+    margin-bottom:1em
 }
 
-.top-padding {
-	padding-top: 6%; /* 72px ÷ 1200 */
-}
-
-.bottom-padding {
-	padding-bottom: 6%; /* 72px ÷ 1200 */
-}
-
-header, .benefits, .about-me, .newsletter {
-	overflow:auto;
+header,.benefits,.about-me,.newsletter {
+    overflow:auto
 }
 
 header {
-    background-color: #fff; 
-    padding-bottom: 3em; /* 48px ÷ 16 */
-}
-
-.logo {
-	float: left;
+    background-color:#fff
 }
 
 .social {
-	float: right;
-	width: 28%; /* 336px ÷ 1200 */
+    width:28%;
+/* 336px ÷ 1200 */
+    overflow:hidden;
+    margin-top:2em
 }
-
-.social a {
-	margin-left: 20%; /* 48px ÷ 240 */
-	margin-top: 3em; /* 48px ÷ 16 */
-	float:right;
-	text-align:center;
-	text-decoration: none;
-	color: #322c6f;
-	font: normal 24px/1em "bebas_neueregular", "Century Gothic", sans-serif;
-}
-
 
 .circle {
-	display: block;
-	background-color: #d1e4fc;
-	border-radius: 50%;
-	height: 3em; /* 72px ÷ 24 */
-	width: 3em; /* 72px ÷ 24 */
+    display:block;
+    background-color:#fff;
+    border-radius:50%;
+    height:3em;
+/* 72px ÷ 24 */
+    width:3em
+/* 72px ÷ 24 */
 }
 
 .blog {
-	background: #d1e4fc url("images/blog-t.png") no-repeat center center;
+    background-image:url(images/blog-t.png);
+    background-repeat:no-repeat;
+    background-position:center center
 }
 
-
 .podcast {
-	background: #d1e4fc url("images/podcast-t.png") no-repeat center center;
+    background-image:url(images/podcast-t.png);
+    background-repeat:no-repeat;
+    background-position:center center
+}
 
+.social a {
+    text-align:center;
+    text-decoration:none;
+    font:normal 24px/1em bebas_neueregular,"Century Gothic",sans-serif;
+    float:left;
+    margin-left:10%;
+    color:#fff
 }
 
 .newsletter {
-	padding-top: 3em; /* 48px ÷ 16 */
-	padding-bottom: 3em; /* 48px ÷ 16 */
-	background-color: #322c6f;
-	color: #fff;
-}
-
-.newsletter .description {
-	float: left;
-	width: 58%; /* 696 ÷ 1200 */
-}
-
-.newsletter .description p {
-	width: 92%; /* 552 ÷ 600 */
-}
-
-.subscription a {
-	color: #fff;
+    background-color:#322c6f;
+    color:#fff
 }
 
 .subscription {
-	display: inline-block;
-	width: 22.5em; /* 360px ÷ 16 */
-	text-align: center;
-	float: right;
-	padding-top: 6em; /* 96px ÷ 16 */
+    text-align:center
 }
 
-a.subscribe-button  {
-	display: block;
-	font: 48px "bebas_neueregular", "Century Gothic", sans-serif;
-	line-height: 2em;
-	width: 7.5em; /* 360px ÷ 48 */
-	height: 2em; /* 96 ÷ 48 */
-	background-color: #b91806;
-	color: #fff;
-	text-align: center;
-	text-decoration: none;
+.subscription a {
+    color:#fff
 }
 
+a.subscribe-button {
+    display:block;
+    font-family:"bebas_neueregular","Century Gothic",sans-serif;
+    line-height:2em;
+    background-color:#b91806;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    font-size:36px;
+    height:2em
+/* 96 ÷ 48 */
+}
 
+header .social {
+    display:none
+}
+
+.benefits .subscribe {
+    display:none
+}
+
+.benefits .icons {
+    text-align:justify;
+    margin-top:1em
+}
+
+.icons:after {
+    content:'';
+    display:inline-block;
+    width:100%
+}
 
 .benefits {
-	padding-top: 3em; /* 48px ÷ 16 */
-	width: 100%;
-	padding-bottom: 3em; /* 48px ÷ 16 */
-	background-color: #d1e4fc;
-}
-
-.icons {
-	text-align: justify;
-
-}
-
-.icons:after{
-    content: '';
-    display: inline-block;
-    width: 100%;
+    width:100%;
+    background-color:#d1e4fc
 }
 
 .benefits .icon {
-	width: 193px; 
-	display: inline-block;
-	text-align: center;
+    display:inline-block;
+    vertical-align:top;
+    width:192px;
+    text-align:center;
+    margin-top:1em
 }
-
 
 .about-me {
-	padding-top: 3em; /* 48px ÷ 16 */
-	background: #fff;
+    background:#fff
 }
 
-.about-me img {
-	float: right;
-	margin-top: -3.43em; /* -55px ÷ 16 */
+.ben-square {
+    display:none
+}
+
+.card img {
+    float:right;
+    margin-top:-3.43em;
+/* -55px ÷ 16 */
+    width:40%;
+    max-width:260px
 }
 
 .about-me p {
-	margin-right: 34%; /* 408 ÷ 1200 */
+    margin-right:34%
+/* 408 ÷ 1200 */
 }
 
+/* ################ SMALL SCREEN STYLES ###################### */
+@media screen and (max-width: 699px) {
+/* .logo {
+		width: 100%;
+		max-width: 608px;
+	} */
+.logo {
+    display:none
+}
+
+.logo-small {
+    display:block;
+    width:100%;
+    max-width:320px
+}
+
+.subscription h2,.about-me h2,.benefits h2 {
+    text-align:center
+}
+
+.newsletter .social {
+    float:none
+}
+
+.social a {
+    display:inline-block;
+    float:none;
+    margin-left:2.5%;
+    margin-right:2.5%
+/* 24px ÷ 288px */
+}
+
+.social {
+    width:100%;
+    text-align:center
+}
+
+.subscribe-button {
+    display:block;
+    width:240px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.benefits {
+    width:100%
+}
+
+.benefits .icon {
+    display:block;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.about-me img {
+    margin:0 auto
+}
+
+.about-me .card {
+    display:none
+}
+
+.ben-square {
+    display:block;
+    float:none
+}
+
+.about-me p {
+    width:100%
+}
+}
+
+/* ################ MID SCREEN STYLES ###################### */
+@media screen and (min-width: 700px) and (max-width: 999px) {
+.wrapper {
+    padding-top:2%;
+    padding-bottom:2%
+/* 24px ÷ 1200 */
+}
+
+.subscription {
+    display:block;
+    float:left;
+    width:264px;
+/* 264px ÷ 16 */
+    padding-top:2em;
+/* 48px ÷ 16 */
+    padding-right:2em
+}
+
+.newsletter .social {
+    display:block;
+    float:left;
+    width:240px
+}
+
+.social a {
+    margin-right:20%;
+/* 48px ÷ 240  ???? - Is this the correct context*/
+    margin-left:0
+}
+
+.benefits {
+    clear:left
+}
+
+.benefits .icon {
+    width:30%;
+    max-width:192px
+}
+
+.icon img {
+    max-width:100%
+}
+
+.benefits .subscribe-button {
+    display:block;
+    width:240px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.about-me .card {
+    display:none
+}
+
+.ben-square {
+    display:block;
+    float:none
+}
+
+.about-me p {
+    width:100%
+}
+}
+
+/* ################ LARGER SCREEN STYLES ###################### */
+@media screen and (min-width: 1000px) {
+.wrapper {
+    padding-top:6%;
+/* 72px ÷ 1200 */
+    padding-bottom:6%;
+/* 72px ÷ 1200 */
+    max-width:1366px;
+    margin:0 auto
+}
+
+.x-padding {
+    padding-left:8%;
+    padding-right:8%
+/* 96px ÷ 1200px */
+}
+
+.logo {
+    float:left;
+    max-width:70%
+}
+
+header .social {
+    display:block
+}
+
+.social {
+    float:right;
+    width:200px
+}
+
+.description p {
+    width:50%
+}
+
+.newsletter .description p {
+    float:left
+}
+
+.newsletter .social {
+    display:none
+}
+
+.social a {
+    color:#322c6f;
+    float:right
+}
+
+.subscription {
+    display:block;
+    width:360px;
+/* 360px ÷ 16 */
+    float:right;
+    padding-top:1em
+/* 96px ÷ 16 */
+}
+
+a.subscribe-button {
+    font-size:48px;
+    height:2em
+/* 96 ÷ 48 */
+}
+
+.circle {
+    background-color:#d1e4fc
+}
+
+.benefits .subscribe-button {
+    display:none;
+    width:240px
+}
+
+.about-me .card {
+    float:right
+}
+}

@@ -98,14 +98,10 @@ header {
     background-color: #fff;
 }
 
-.logo {
-    display: none;
-}
 
-.logo-small {
+.logo img {
     display: block;
-    width: 100%; 
-    max-width: 320px; /* Prevent upscaling of image */
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -204,12 +200,9 @@ a.subscribe-button {
     margin: 0 auto;
 }
 
-.ben-square {
+.ben {
     display: block;
-}
-
-.about-me .card {
-    display: none
+    text-align: center;
 }
 
 
@@ -229,13 +222,9 @@ a.subscribe-button {
 
 @media screen and (min-width: 679px)  {
 
-.logo-small {
-    display: none
-}
 
 .logo {
     display:block;
-    max-width: 100%;
 }
 
 .subscription h2, .about-me h2 {
@@ -265,16 +254,12 @@ a.subscribe-button {
     clear: left;
 }
 
-.about-me .card {
+.ben {
     display: block;
     float: right;
     margin-top: -3.43em; /* -55px ÷ 16; moves card up toward heading */
     width: 40%;
     max-width: 260px;
-}
-
-.ben-square {
-    display: none;
 }
 
 .about-me p {
@@ -288,6 +273,11 @@ a.subscribe-button {
 /* ################ 750px+ STYLES ###################### */
 
 @media screen and (min-width: 750px)  {
+
+
+.logo {
+    float: left;
+}
 
 .benefits h2 {
     text-align: left;
@@ -329,9 +319,6 @@ a.subscribe-button {
     padding-right: 8%; /* 96px ÷ 1200px */
 }
 
-.logo {
-    float: left;
-}
 
 header .social {
     display: block;

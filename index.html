@@ -19,9 +19,16 @@
         <header class="x-padding inside-b-padding">
             <h1 class="nocontent outline">Baseball for Busy
             People</h1>
-            <img alt="Baseball for Busy People" class="logo" src=
+
+            <picture class="logo">
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source srcset="images/logo.png" media="(min-width: 750px)" >
+<!--[if IE 9]></video><![endif]-->
+    <img srcset="images/logo-small.png" alt="Baseball for Busy People">
+</picture>
+          <!--  <img alt="Baseball for Busy People" class="logo" src=
             "images/logo.png"> 
-            <img class="logo-small" alt="Baseball for Busy People" src="images/logo-small.png">
+            <img class="logo-small" alt="Baseball for Busy People" src="images/logo-small.png"> -->
 
             <div class="social">
                 
@@ -102,9 +109,15 @@
             </section><!-- end benefits -->
 
             <section class="about-me x-padding inside-top-padding">
-                <h2>About Me</h2><img alt="Ben Kirst" class="card" src=
-                "images/ben-blue.png"> <img alt="Ben Kirst" class="ben-square" src=
-                "images/ben-square.png">
+                <h2>About Me</h2>
+                
+                <picture class="ben">
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source srcset="images/ben-blue.png" media="(min-width: 679px)" >
+                <!--[if IE 9]></video><![endif]-->
+                    <img srcset="images/ben-square.png" alt="Ben Kirst">
+                </picture>
+
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Nullam lacus lorem, iaculis vitae felis eu, malesuada

@@ -10,7 +10,7 @@ Red - #b91806;
 
 
 ######################## RESET ########################## */
-html,span,p,applet,object,iframe,h1,h2,h3,h4,h5,h6,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+html, body, span,p,applet,object,iframe,h1,h2,h3,h4,h5,h6,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin:0;
     padding:0;
     border:0;
@@ -33,386 +33,347 @@ html {
 }
 
 /* ################ GENERAL STYLES ###################### */
-.outline,.hide,.logo-small {
+.outline {
     display:none
 }
 
+.wrapper {
+    padding-top: 2%;
+    padding-bottom: 2%; /* 24px ÷ 1200 */
+}
+
+.inside-top-padding {
+    padding-top: 4%; /* 48px ÷ 1200 */
+}
+
+.inside-b-padding {
+    padding-bottom: 4%; /* 48px ÷ 1200 */
+}
+
+.x-padding {
+    padding-left: 4%;
+    padding-right: 4%; /* 24px ÷ 1200 */
+}
+
+html {
+    background-color: #aaa;
+}
+
 body {
-    font:normal 16px/1.5em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
-    color:#15192d;
-    margin:0;
-    padding:0;
-    min-width:300px
+    font: normal 16px/1.5em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    color: #15192d;
+    min-width: 300px;
+    max-width: 1366px;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
 @font-face {
     font-family:'bebas_neueregular';
-    src:url(font/BebasNeue-webfont.eot);
-    src:url(font/BebasNeue-webfont.eot?#iefix) format("embedded-opentype"),url(font/BebasNeue-webfont.woff2) format("woff2"),url(font/BebasNeue-webfont.woff) format("woff"),url(font/BebasNeue-webfont.ttf) format("truetype"),url(font/BebasNeue-webfont.svg#bebas_neueregular) format("svg");
-    font-weight:400;
-    font-style:normal
-}
-
-.inside-top-padding {
-    padding-top:4%
-/* 48px ÷ 1200 */
-}
-
-.inside-b-padding {
-    padding-bottom:4%
-/* 48px ÷ 1200 */
-}
-
-.x-padding {
-    padding-left:4%;
-    padding-right:4%
-/* 24px ÷ 1200 */
+    src: url(font/BebasNeue-webfont.eot);
+    src: url(font/BebasNeue-webfont.eot?#iefix) format("embedded-opentype"),url(font/BebasNeue-webfont.woff2) format("woff2"),url(font/BebasNeue-webfont.woff) format("woff"),url(font/BebasNeue-webfont.ttf) format("truetype"),url(font/BebasNeue-webfont.svg#bebas_neueregular) format("svg");
+    font-weight: 400;
+    font-style: normal;
 }
 
 h2 {
-    font:normal 48px/1em bebas_neueregular,"Century Gothic",sans-serif;
-    margin:.5em 0
-}
-
-p {
-    margin-top:1em;
-    margin-bottom:1em
-}
-
-header,.benefits,.about-me,.newsletter {
-    overflow:auto
-}
-
-header {
-    background-color:#fff
-}
-
-.social {
-    width:28%;
-/* 336px ÷ 1200 */
-    overflow:hidden;
-    margin-top:2em
-}
-
-.circle {
-    display:block;
-    background-color:#fff;
-    border-radius:50%;
-    height:3em;
-/* 72px ÷ 24 */
-    width:3em
-/* 72px ÷ 24 */
-}
-
-.blog {
-    background-image:url(images/blog-t.png);
-    background-repeat:no-repeat;
-    background-position:center center
-}
-
-.podcast {
-    background-image:url(images/podcast-t.png);
-    background-repeat:no-repeat;
-    background-position:center center
-}
-
-.social a {
-    text-align:center;
-    text-decoration:none;
-    font:normal 24px/1em bebas_neueregular,"Century Gothic",sans-serif;
-    float:left;
-    margin-left:10%;
-    color:#fff
-}
-
-.newsletter {
-    background-color:#322c6f;
-    color:#fff
-}
-
-.subscription {
-    text-align:center
-}
-
-.subscription a {
-    color:#fff
-}
-
-a.subscribe-button {
-    display:block;
-    font-family:"bebas_neueregular","Century Gothic",sans-serif;
-    line-height:2em;
-    background-color:#b91806;
-    color:#fff;
-    text-align:center;
-    text-decoration:none;
-    font-size:36px;
-    height:2em
-/* 96 ÷ 48 */
-}
-
-header .social {
-    display:none
-}
-
-.benefits .subscribe {
-    display:none
-}
-
-.benefits .icons {
-    text-align:justify;
-    margin-top:1em
-}
-
-.icons:after {
-    content:'';
-    display:inline-block;
-    width:100%
-}
-
-.benefits {
-    width:100%;
-    background-color:#d1e4fc
-}
-
-.benefits .icon {
-    display:inline-block;
-    vertical-align:top;
-    width:192px;
-    text-align:center;
-    margin-top:1em
-}
-
-.about-me {
-    background:#fff
-}
-
-.ben-square {
-    display:none
-}
-
-.card img {
-    float:right;
-    margin-top:-3.43em;
-/* -55px ÷ 16 */
-    width:40%;
-    max-width:260px
-}
-
-.about-me p {
-    margin-right:34%
-/* 408 ÷ 1200 */
-}
-
-/* ################ SMALL SCREEN STYLES ###################### */
-@media screen and (max-width: 699px) {
-/* .logo {
-		width: 100%;
-		max-width: 608px;
-	} */
-.logo {
-    display:none
-}
-
-.logo-small {
-    display:block;
-    width:100%;
-    max-width:320px
+    font: normal 48px/1em bebas_neueregular,"Century Gothic",sans-serif;
+    margin:.5em 0; /* 8px */
 }
 
 .subscription h2,.about-me h2,.benefits h2 {
-    text-align:center
+    text-align: center;
 }
 
-.newsletter .social {
-    float:none
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-.social a {
-    display:inline-block;
-    float:none;
-    margin-left:2.5%;
-    margin-right:2.5%
-/* 24px ÷ 288px */
+header,.benefits,.about-me,.newsletter {
+    overflow: auto;
 }
 
-.social {
-    width:100%;
-    text-align:center
-}
-
-.subscribe-button {
-    display:block;
-    width:240px;
-    margin-left:auto;
-    margin-right:auto
-}
-
-.benefits {
-    width:100%
-}
-
-.benefits .icon {
-    display:block;
-    margin-left:auto;
-    margin-right:auto
-}
-
-.about-me img {
-    margin:0 auto
-}
-
-.about-me .card {
-    display:none
-}
-
-.ben-square {
-    display:block;
-    float:none
-}
-
-.about-me p {
-    width:100%
-}
-}
-
-/* ################ MID SCREEN STYLES ###################### */
-@media screen and (min-width: 700px) and (max-width: 999px) {
-.wrapper {
-    padding-top:2%;
-    padding-bottom:2%
-/* 24px ÷ 1200 */
-}
-
-.subscription {
-    display:block;
-    float:left;
-    width:264px;
-/* 264px ÷ 16 */
-    padding-top:2em;
-/* 48px ÷ 16 */
-    padding-right:2em
-}
-
-.newsletter .social {
-    display:block;
-    float:left;
-    width:240px
-}
-
-.social a {
-    margin-right:20%;
-/* 48px ÷ 240  ???? - Is this the correct context*/
-    margin-left:0
-}
-
-.benefits {
-    clear:left
-}
-
-.benefits .icon {
-    width:30%;
-    max-width:192px
-}
-
-.icon img {
-    max-width:100%
-}
-
-.benefits .subscribe-button {
-    display:block;
-    width:240px;
-    margin-left:auto;
-    margin-right:auto
-}
-
-.about-me .card {
-    display:none
-}
-
-.ben-square {
-    display:block;
-    float:none
-}
-
-.about-me p {
-    width:100%
-}
-}
-
-/* ################ LARGER SCREEN STYLES ###################### */
-@media screen and (min-width: 1000px) {
-.wrapper {
-    padding-top:6%;
-/* 72px ÷ 1200 */
-    padding-bottom:6%;
-/* 72px ÷ 1200 */
-    max-width:1366px;
-    margin:0 auto
-}
-
-.x-padding {
-    padding-left:8%;
-    padding-right:8%
-/* 96px ÷ 1200px */
+header {
+    background-color: #fff;
 }
 
 .logo {
-    float:left;
-    max-width:70%
+    display: none;
+}
+
+.logo-small {
+    display: block;
+    width: 100%; 
+    max-width: 320px; /* Prevent upscaling of image */
+    margin: 0 auto;
 }
 
 header .social {
-    display:block
-}
-
-.social {
-    float:right;
-    width:200px
-}
-
-.description p {
-    width:50%
-}
-
-.newsletter .description p {
-    float:left
-}
-
-.newsletter .social {
-    display:none
+    display: none;
 }
 
 .social a {
-    color:#322c6f;
-    float:right
+    display: inline-block;
+    float: none;
+    margin-left: 2.5%;
+    margin-right: 2.5%; /* 24px ÷ 288px */
+    text-align: center;
+    text-decoration: none;
+    font: normal 24px/1em bebas_neueregular,"Century Gothic",sans-serif;
+    color: #fff;
 }
 
-.subscription {
-    display:block;
-    width:360px;
-/* 360px ÷ 16 */
-    float:right;
-    padding-top:1em
-/* 96px ÷ 16 */
+.newsletter {
+    background-color: #322c6f;
+    color: #fff;
 }
 
-a.subscribe-button {
-    font-size:48px;
-    height:2em
-/* 96 ÷ 48 */
+.newsletter .social {
+    display: block;
+    text-align: center;
+    margin-top: 2.5em; /* 40px */
 }
 
 .circle {
-    background-color:#d1e4fc
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 3em; /* 72px ÷ 24px - font is set under .social a */
+    width: 3em; /* 72px ÷ 24px */
 }
 
-.benefits .subscribe-button {
-    display:none;
-    width:240px
+.blog {
+    background-image: url(images/blog-t.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.podcast {
+    background-image: url(images/podcast-t.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.subscription {
+    text-align: center;
+    display: block;
+}
+
+.subscription a {
+    color: #fff;
+}
+
+a.subscribe-button {
+    display: block;
+    font-family: "bebas_neueregular","Century Gothic",sans-serif;
+    line-height: 2em;
+    background-color: #b91806;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    height: 2em; /* 96 ÷ 48 */
+    margin: 1em auto;
+    /* width is based on width of .subscription */
+}
+
+.subscription p {
+    margin-top: -1em;
+}
+
+
+.benefits {
+    background-color: #d1e4fc;
+}
+
+.benefits .icon {
+    width: 192px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+
+.about-me {
+    background: #fff;
+}
+
+.about-me img {
+    margin: 0 auto;
+}
+
+.ben-square {
+    display: block;
 }
 
 .about-me .card {
-    float:right
+    display: none
 }
+
+
+/* ################ 401px+ STYLES ###################### */
+
+@media screen and (min-width: 401px)  {
+
+    a.subscribe-button {
+        width: 288px; 
+    }
+
+}
+
+
+
+/* ################ 679px+ STYLES ###################### */
+
+@media screen and (min-width: 679px)  {
+
+.logo-small {
+    display: none
+}
+
+.logo {
+    display:block;
+    max-width: 100%;
+}
+
+.subscription h2, .about-me h2 {
+    text-align: left;
+}
+
+.subscription {
+    float:left;
+    padding-right: 5em;
+}
+
+
+.newsletter .social {
+    float: left;
+    width: 15em; /* 240 ÷ 16 */
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.newsletter .social a {
+    float: left;
+    margin-right: 20%; /* Context is 15em = 240px; 48 ÷ 240 */
+    margin-left: 0;
+}
+
+.benefits {
+    clear: left;
+}
+
+.about-me .card {
+    display: block;
+    float: right;
+    margin-top: -3.43em; /* -55px ÷ 16; moves card up toward heading */
+    width: 40%;
+    max-width: 260px;
+}
+
+.ben-square {
+    display: none;
+}
+
+.about-me p {
+    margin-right: 34%; /* 408 ÷ 1200; makes room for card photo */
+}
+
+}
+
+
+
+/* ################ 750px+ STYLES ###################### */
+
+@media screen and (min-width: 750px)  {
+
+.benefits h2 {
+    text-align: left;
+}
+
+.benefits .icons {
+    text-align: justify;
+}
+
+.benefits .icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 192px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.icons:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+
+}
+
+
+/* ################ 1040px+ STYLES ###################### */
+@media screen and (min-width: 1040px) {
+    
+.wrapper {
+    padding-top: 6%; /* 72px ÷ 1200 */
+    padding-bottom: 6%; /* 72px ÷ 1200 */
+    margin: 0 auto;
+}
+
+.x-padding {
+    padding-left: 8%;
+    padding-right: 8%; /* 96px ÷ 1200px */
+}
+
+.logo {
+    float: left;
+}
+
+header .social {
+    display: block;
+    float: right;
+    width: 200px;
+}
+
+header .social a {
+    color: #322c6f;
+    float: right;
+    padding-top: 27px;
+}
+
+.social .circle {
+    background-color: #d1e4fc;
+}
+
+
+.newsletter .social {
+    display: none;
+}
+
+.description p {
+    width: 60%; /* Makes space for subscribe button */
+    float: left;
+}
+
+.subscription {
+    display: block;
+    float: right;
+    padding-top: 1em; /* 96px ÷ 16 */
+    padding-right: 0;
+}
+
+.benefits a.subscribe-button {
+    font-size: 48px;
+    margin: 0;
+}
+
+.benefits .subscribe-button {
+    display: none;
+}
+
+
 }

@@ -129,7 +129,7 @@ header .social {
 .newsletter .social {
     display: block;
     text-align: center;
-    margin-top: 2.5em; /* 40px */
+    padding-top: 2.5em; /* 40px */
 }
 
 .circle {
@@ -242,7 +242,6 @@ a.subscribe-button {
     float: left;
     width: 15em; /* 240 ÷ 16 */
     overflow: hidden;
-    margin-top: 2em;
 }
 
 .newsletter .social a {

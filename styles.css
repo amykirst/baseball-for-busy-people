@@ -91,6 +91,23 @@ p {
     margin-bottom: 1em;
 }
 
+a:link, a:active, a:visited {
+    text-decoration: underline;
+    color: #322c6f;
+}
+
+a:hover {
+    color: #15192d;
+}
+
+.newsletter a:link, .newsletter a:active, .newsletter a:visited {
+    color: #fff;
+}
+
+.newsletter a:hover {
+    color: #d1e4fc;
+}
+
 header,.benefits,.about-me,.newsletter {
     overflow: auto;
 }
@@ -118,6 +135,10 @@ header .social {
     text-align: center;
     text-decoration: none;
     font: normal 24px/1em bebas_neueregular,"Century Gothic",sans-serif;
+    color: #fff;
+}
+
+.social a:hover {
     color: #fff;
 }
 
@@ -173,6 +194,11 @@ a.subscribe-button {
     height: 2em; /* 96 ÷ 48 */
     margin: 1em auto;
     /* width is based on width of .subscription */
+}
+
+a.subscribe-button:hover  {
+    background-color: #da1c07;
+    color: #fff;
 }
 
 .subscription p {

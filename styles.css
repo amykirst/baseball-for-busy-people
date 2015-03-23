@@ -116,6 +116,9 @@ header {
     background-color: #fff;
 }
 
+header .logo {
+    max-width: 100%; /* Prevent logo from growing larger than container on zoom */
+}
 
 .logo img {
     display: block;
@@ -135,11 +138,6 @@ header .social {
     text-align: center;
     text-decoration: none;
     font: normal 24px/1em bebas_neueregular,"Century Gothic",sans-serif;
-    color: #fff;
-}
-
-.social a:hover {
-    color: #fff;
 }
 
 .newsletter {
@@ -150,7 +148,15 @@ header .social {
 .newsletter .social {
     display: block;
     text-align: center;
-    padding-top: 2.5em; /* 40px */
+    padding-top: 2.3em; /* 40px */
+}
+
+.newsletter .social a {
+    color: #fff;
+}
+
+.newsletter .social a:hover {
+    color: #fff;
 }
 
 .circle {
@@ -193,7 +199,7 @@ a.subscribe-button {
     font-size: 2.25em; /* 36px ÷ 16 */
     height: 2em; /* 96 ÷ 48 */
     margin: 1em auto;
-    /* width is based on width of .subscription */
+    /* width is based on width of .subscription; for small screens width is default 100% */
 }
 
 a.subscribe-button:hover  {
@@ -201,7 +207,7 @@ a.subscribe-button:hover  {
     color: #fff;
 }
 
-.subscription p {
+.subscription p:first-of-type {
     margin-top: -1em;
 }
 
@@ -215,9 +221,11 @@ a.subscribe-button:hover  {
     text-align: center;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin-bottom: 2em;
+    font-size: 1.125em;
+    
   }
-
 
 .about-me {
     background: #fff;
@@ -305,6 +313,7 @@ a.subscribe-button:hover  {
     float: left;
 }
 
+
 .benefits h2 {
     text-align: left;
 }
@@ -319,6 +328,7 @@ a.subscribe-button:hover  {
     width: 192px;
     text-align: center;
     margin-top: 1em;
+    margin-bottom:0;
 }
 
 .icons:after {
@@ -345,6 +355,9 @@ a.subscribe-button:hover  {
     padding-right: 8%; /* 96px ÷ 1200px */
 }
 
+header .logo {
+    max-width: 70%; /* Prevent logo from crowding out social on zoom */
+} 
 
 header .social {
     display: block;
@@ -358,6 +371,7 @@ header .social a {
     padding-top: 27px;
 }
 
+
 .social .circle {
     background-color: #d1e4fc;
 }
@@ -367,9 +381,9 @@ header .social a {
     display: none;
 }
 
-.description p {
-    width: 60%; /* Makes space for subscribe button */
+.description {
     float: left;
+    width: 60%; /* Makes space for subscribe button */
 }
 
 .subscription {

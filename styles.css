@@ -39,8 +39,11 @@ html {
 }
 
 .wrapper {
-    padding-top: 2%;
-    padding-bottom: 2%; /* 24px ÷ 1200 */
+    padding-top: 8%;
+}
+
+.wrapper-bottom {
+    padding-bottom: 8%; /* 24px ÷ 1200 */
 }
 
 .inside-top-padding {
@@ -69,6 +72,28 @@ body {
     background-color: #fff;
 }
 
+.share {
+    margin-top: 0;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #15192d;
+    overflow:auto;
+}
+
+.share p {
+    line-height: 1;
+    color: #fff;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.share-btn {
+    display: inline-block;
+}
+
+
+
 @font-face {
     font-family:'bebas_neueregular';
     src: url(font/BebasNeue-webfont.eot);
@@ -84,6 +109,14 @@ h2 {
 
 .subscription h2,.about-me h2,.benefits h2 {
     text-align: center;
+}
+
+h3 {
+    font-family: bebas_neueregular,"Century Gothic",sans-serif;
+    font-size: 32px;
+    line-height: 1em;
+    margin-top: 1em;
+    color: #322c6f;
 }
 
 p {
@@ -212,7 +245,7 @@ a.subscribe-button:hover  {
 }
 
 
-.benefits {
+.benefits, .payment {
     background-color: #d1e4fc;
 }
 
@@ -308,6 +341,9 @@ a.subscribe-button:hover  {
 
 @media screen and (min-width: 750px)  {
 
+   .share-block {
+    float:right;
+}
 
 .logo {
     float: left;
@@ -343,11 +379,16 @@ a.subscribe-button:hover  {
 
 /* ################ 1040px+ STYLES ###################### */
 @media screen and (min-width: 1040px) {
+
+ 
     
 .wrapper {
     padding-top: 6%; /* 72px ÷ 1200 */
-    padding-bottom: 6%; /* 72px ÷ 1200 */
     margin: 0 auto;
+}
+
+.wrapper-bottom {
+    padding-bottom: 6%; /* 72px ÷ 1200 */
 }
 
 .x-padding {
@@ -385,6 +426,7 @@ header .social a {
     float: left;
     width: 60%; /* Makes space for subscribe button */
 }
+
 
 .subscription {
     display: block;

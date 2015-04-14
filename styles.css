@@ -141,7 +141,7 @@ a:hover {
     color: #d1e4fc;
 }
 
-header,.benefits,.about-me,.newsletter {
+header,.benefits,.newsletter {
     overflow: auto;
 }
 

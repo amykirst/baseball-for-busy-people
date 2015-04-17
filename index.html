@@ -55,16 +55,17 @@
             </a>
             <div class="social">
 
-                    <a href="#">
+                    <a href="#" onClick="ga('send', 'event', 'Podcast', 'Click', 'Header');">
                         <div class="circle podcast"></div>
                         <p>Podcast</p>
                     </a>
                 
-                    <a href="/blog" onClick="_gaq.push(['_trackEvent', 'Social', 'Click', 'Blog - Header']);">
+                    <a href="/blog" onClick="ga('send', 'event', 'Blog', 'Click', 'Header');">
                     	<div class="circle blog"></div>
                     	<p>Blog</p>
                     </a>
                
+
 
                 
                     
@@ -87,22 +88,22 @@
 
                 <section class="subscription">
                     <h2 class="nocontent outline">Subscribe</h2>
-                    <a target="_blank" class="subscribe-button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QDY9THJFQFAC">Subscribe</a>
+                    <a target="_blank" onClick="ga('send', 'event', 'Subscribe', 'Click', 'Subscription Section');" class="subscribe-button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QDY9THJFQFAC">Subscribe</a>
                     <p>Just $5 for the entire season</p>
-                    <p><a target="_blank" href="http://us10.campaign-archive1.com/?u=caa7114765bb0841fd228a6af&id=c403e7a829&e=09c025c1dd">View a sample email</a></p>
+                    <p><a  onClick="ga('send', 'event', 'Sample Email', 'Click', 'Subscription Section');" target="_blank" href="http://us10.campaign-archive1.com/?u=caa7114765bb0841fd228a6af&id=c403e7a829&e=09c025c1dd">View a sample email</a></p>
                     
 
                 </section><!-- end subscribe section -->
 
                 <div class="social">
-                    <a href="/blog" onClick="_gaq.push(['_trackEvent', 'Social', 'Click', 'Blog - Subscription']);">
+                    <a href="/blog" onClick="ga('send', 'event', 'Blog', 'Click', 'Subscription Section');">
                     	<div class="circle blog"></div>
                     	<p>Blog</p>
                     </a>
                
 
                 
-                    <a href="#">
+                    <a href="#" onClick="ga('send', 'event', 'Podcast', 'Click', 'Subscription Section');">
                     	<div class="circle podcast"></div>
                     	<p>Podcast</p>
                     </a>
@@ -136,7 +137,7 @@
                     </div><!-- end icons -->
                 </div>
 		
-		<a target="_blank" class="subscribe-button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QDY9THJFQFAC">Subscribe</a>
+		<a target="_blank" onClick="ga('send', 'event', 'Subscribe', 'Click', 'Benefits Section');"  class="subscribe-button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QDY9THJFQFAC">Subscribe</a>
 		
             </section><!-- end benefits -->
 

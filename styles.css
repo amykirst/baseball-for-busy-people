@@ -66,16 +66,16 @@ html {
 body {
     font: normal 16px/1.5em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
     color: #15192d;
-    min-width: 300px;
-    max-width: 1366px;
+    min-width: 300px; 
+    max-width: 1366px; 
     margin: 0 auto;
     background-color: #fff;
 }
 
 .share {
     margin-top: 0;
-    padding-top:10px;
-    padding-bottom: 10px;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
     background-color: #15192d;
     overflow:auto;
 }
@@ -115,7 +115,7 @@ h3 {
     font-family: bebas_neueregular,"Century Gothic",sans-serif;
     font-size: 32px;
     line-height: 1em;
-    margin-top: 1em;
+    margin-top: 1.5em;
     color: #322c6f;
 }
 
@@ -178,6 +178,10 @@ header .social {
     color: #fff;
 }
 
+.newsletter h3 {
+  color: #fff;
+}
+
 .newsletter .social {
     display: block;
     text-align: center;
@@ -201,13 +205,13 @@ header .social {
 }
 
 .blog {
-    background-image: url(images/blog-t.png);
+    background-image: url(/images/blog-t.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.podcast {
-    background-image: url(images/podcast-t.png);
+.twitter {
+    background-image: url(/images/tweet-t.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -378,7 +382,7 @@ a.subscribe-button:hover  {
 
 
 /* ################ 1040px+ STYLES ###################### */
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1040px) { 
 
  
     

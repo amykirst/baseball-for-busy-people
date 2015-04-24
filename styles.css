@@ -210,7 +210,7 @@ header .social {
     background-position: center center;
 }
 
-.twitter {
+.circle.twitter {
     background-image: url(/images/tweet-t.png);
     background-repeat: no-repeat;
     background-position: center center;

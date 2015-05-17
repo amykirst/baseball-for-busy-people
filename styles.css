@@ -288,6 +288,25 @@ a.subscribe-button:hover  {
     text-align: center;
 }
 
+.ques {
+    margin-top: 2em;
+}
+
+.spotlight {
+    background-color: #15192d;
+  color: #fff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.spotlight a, .spotlight a:visited, .spotlight a:active {
+    color: #fff;
+}
+
+.spotlight a:hover {
+    color: #d1e4fc;
+}
+
 
 /* ################ 401px+ STYLES ###################### */
 

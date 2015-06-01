@@ -113,12 +113,12 @@ li {
     font-style: normal;
 }
 
-h2 {
+h1, h2 {
     font: normal 48px/1em bebas_neueregular,"Century Gothic",sans-serif;
     margin:.5em 0; /* 8px */
 }
 
-.subscription h2,.about-me h2,.benefits h2 {
+.subscription h2,.about-me h2,.benefits h2, .subscription h1,.about-me h1,.benefits h1 {
     text-align: center;
 }
 
@@ -329,7 +329,7 @@ a.subscribe-button:hover  {
     display:block;
 }
 
-.subscription h2, .about-me h2 {
+.subscription h2, .about-me h2, .subscription h1, .about-me h1  {
     text-align: left;
 }
 
@@ -384,7 +384,7 @@ a.subscribe-button:hover  {
 }
 
 
-.benefits h2 {
+.benefits h2, .benefits h1  {
     text-align: left;
 }
 
